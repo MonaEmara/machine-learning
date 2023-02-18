@@ -1,6 +1,6 @@
 ---
 title: 'Machine Learning - Learning Lab 1 Independent Practice'
-author: ""
+author: "Dr. Mona Emara"
 date: "`r format(Sys.Date(),'%B %e, %Y')`"
 output: html_document
 ---
@@ -25,25 +25,32 @@ Part A:
 
 1.  How good was the machine learning model we developed in the guiding practice? Would you be comfortable using it to code more conversations? What if you read about someone using such a model as a reviewer of research? Please add your thoughts and reflections following the bullet point below.
 
--   
+- We had 85% accuracy.
 
 2.  How might the model be improved? Share any ideas you have at this time below:
 
--   
+-   The model didn’t use any variables that looked at the actual text/content of the tweets.
 
 Part B: Use the institutional library (e.g. [NCSU Library](https://www.lib.ncsu.edu/#articles)), [Google Scholar](https://scholar.google.com/) or search engine to locate a research article, presentation, or resource that applies machine learning to an educational context aligned with your research interests. More specifically, **locate a machine learning study that involve making predictions**.
 
 1.  Provide an APA citation for your selected study.
 
-    -   
+    - Andrews-Todd, J., & Forsyth, C. M. (2020). Exploring social and cognitive dimensions of collaborative problem solving in an open online simulation-based task. Computers in human behavior, 104, 105759.  
 
 2.  What research questions were the authors of this study trying to address and why did they consider these questions important?
 
-    -   
+    -  RQ1: To what extent do participants' discourse and actions display the skills associated with CPS identified in the ontology?
+
+RQ2: How do profiles based on the CPS skills displayed relate to performance?
+
+RQ3: How do the CPS skill profiles relate to teacher and student self-report ratings?
+
+RQ4: What types of team compositions exist with respect to the CPS skill profiles? (exploratory analysis)
+They were interested in exploring the constellation of profile memberships within each team and whether certain team compositions were more beneficial for performance than others. 
 
 3.  What were the results of these analyses?
 
-    -   
+    -  Results showed that students in the low social/low cognitive profile group demonstrated poorer performance than students in other profile groups. Further, having at least one high social/high cognitive member in a team facilitated performance. This study offers groundwork for future studies in measuring CPS with an approach suitable for less constrained collaborative environments. 
 
 ### Part II: Data Product
 
@@ -70,19 +77,19 @@ final_fit$.predictions[[1]] %>%
 
 Please interpret the above confusion matrix using [these guidelines](https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62) in terms of the true positive, true negative, false positive, and false negative rates. After each of the following (i.e., "True positive"), add both the *number* and percentage of observations. For instance, if there were 100 true positives out of a total of 400 data points, please write: 100 (25%).
 
-**True positive**:
+**True positive**:260 (81%)
 
-**True negative**:
+**True negative**:402 (92%)
 
-**False positive**:
+**False positive**:60 (19%)
 
-**False negative**:
+**False negative**:37 (8%)
 
 You can read more about interpreting these [here](https://bradleyboehmke.github.io/HOML/process.html#classification-models) in terms of the specificity, sensitivity, precision, and recall, four statistics based on the information in the confusion matrix.
 
 Return to your answer for Part 1A. Now, having examined the true and false positive and negative rates, how good do you think machine learning model we developed in the case study was? Write more specifically using the evidence you have from creating and interpreting the confusion matrix (above) after the following bullet point.
 
--   
+-   The false positive (type I error) is 19% which seems high, and more concerning to have that value as a false positive versus if it were that amount of a false negative.
 
 ### Knit & Submit
 
